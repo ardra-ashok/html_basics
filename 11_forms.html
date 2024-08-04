@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Forms</title>
+</head>
+<body>
+ <form action="">
+  <div>
+   <h2>Text Area </h2>
+   <label for="notes">Additional Notes</label>
+   <textarea name="" id="notes" rows="10" cols="50"></textarea>
+  </div>
+  <div>
+   <h2>Checkbox</h2>
+   <label for="subscribe">Subscribe to newsletter</label>
+   <input type="checkbox" name="subscribe" id="subscribe" checked/>
+  </div>
+  <div>
+   <h2>Range Input</h2>
+   <label for="volume">Select Volume</label>
+   <input type="range" name="volume" id="volume" min="0" max="10" value="2" step="2">
+  </div>
+  <div>
+   <h2>Select Input</h2>
+   <label for="skill_level">Skill Level</label>
+   <select name="skill_level" id="skill_level">
+    <option value="beginner">Beginner</option>
+    <option value="intermediate">Intermediate</option>
+    <option value="expert">Expert</option>
+   </select>
+  </div>
+  <div>
+   <h2>Radio Input</h2>
+   <fieldset disabled>
+    <legend>Gender:</legend>
+    <div>
+     <input type="radio" name="gender" id="male" value="male" checked>
+     <label for="male">Male</label>
+    </div>
+    <div>
+     <input type="radio" name="gender" id="female" value="female">
+     <label for="female">Female</label>
+    </div>
+    <div>
+     <input type="radio" name="gender" id="other" value="other">
+     <label for="other">Other</label>
+    </div>
+   </fieldset>
+  </div>
+  <div>
+   <h2>Other Input Types</h2>
+   <input type="color" name="color" id="" value="#FF0000">
+   <input type="color" name="color" id="" value="#00FF00" disabled>
+   <input type="date" name="date" id="date">
+  </div>
+  <button>Submit</button>
+ </form>
+</body>
+</html>
